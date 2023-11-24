@@ -1,0 +1,111 @@
+.app-process {
+  position: relative;
+  padding-top: 89.91px;
+  padding-bottom: 38.29px;
+  overflow: hidden;
+
+  .strike1-process {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    img {
+      height: 100%;
+    }
+  }
+
+  .strike2-process {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    img {
+      height: 100%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 931px;
+    height: 931px;
+    border-radius: 50%;
+    background: #1c255c;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -72%;
+    left: -5%;
+    right: -5%;
+    width: 110%;
+    height: 1509px;
+    border-radius: 50%;
+    background: #121943;
+  }
+
+  > .container {
+    @extend %flexCenter;
+    @extend %flexColumn;
+    position: relative;
+    z-index: 5;
+    gap: 44.59px;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 30px;
+    height: 591.71px;
+  }
+
+  &__types {
+    @extend %flexCenter;
+    @extend %flexColumn;
+    gap: 20px;
+    width: 410px;
+    height: 410px;
+    background: #0e1c70;
+    border-radius: 50%;
+
+    &:not(:nth-child(2)) {
+      align-self: flex-end;
+    }
+
+    > * {
+      text-align: center;
+    }
+
+    > span {
+      @extend %flexCenter;
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      background: rgba(5, 157, 255, 0.15);
+      color: #fff;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 160%; /* 57.6px */
+    }
+
+    > h3 {
+      margin-top: 38px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 160%; /* 38.4px */
+    }
+
+    > p {
+      width: 265px;
+      color: #bec2c9;
+      font-size: 18px;
+      line-height: 160%; /* 28.8px */
+    }
+  }
+}

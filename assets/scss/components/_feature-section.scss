@@ -1,0 +1,92 @@
+.feature_benefits {
+  padding: 9rem 9.1rem;
+
+  .heading-style {
+    margin-bottom: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+      padding: 0.4rem 4.1rem;
+      border-radius: 0.4rem;
+      background: $light-white;
+      max-width: 23.3rem;
+      flex-shrink: 0;
+      margin-top: 0rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      max-width: 91.9rem;
+      margin-top: 0.1rem;
+      text-align: center;
+    }
+
+    @include breakpoint("iPad") {
+      width: 100%;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+
+    .card {
+      flex: 1;
+      width: 100%;
+      min-width: calc((100% / 3) - 2.2rem);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid $card-border;
+      gap: 2rem;
+      img {
+        max-width: 3.5rem;
+        max-height: 3.5rem;
+      }
+
+      .card-title {
+        color: $dark-navyblue;
+        font-family: $jakarta-medium;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+      }
+      .card-body {
+        // padding-left: 10px;
+        // padding-right: 10px;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 100;
+          // line-height: 25px;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  @include breakpoint("iPad") {
+    .card-container {
+      .card {
+        min-width: calc((100% / 2) - 2.2rem);
+      }
+    }
+  }
+
+  @include breakpoint("mobile") {
+    .card-container {
+      .card {
+        min-width: 100%;
+      }
+    }
+  }
+  @include breakpoint("smallmobile") {
+    .card-container {
+      .card {
+        min-width: 100%;
+      }
+    }
+  }
+}

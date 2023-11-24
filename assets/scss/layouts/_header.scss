@@ -1,0 +1,74 @@
+header {
+  .header_content {
+    padding: 1.8rem 4.9rem;
+    .navbar-collapse {
+      @include breakpoint("iPad") {
+        margin-top: 2.5rem;
+      }
+    }
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      gap: 3rem;
+
+      .nav-link {
+        padding: 0;
+      }
+
+      .nav-link.active {
+        color: $dark-grey;
+      }
+
+      .nav-item {
+        font-size: 1.5rem;
+
+        a {
+          color: $black;
+          text-transform: uppercase;
+        }
+        .dropdown-item {
+          color: $black;
+        }
+        &.dropdown {
+          .nav-link {
+            display: flex;
+            align-items: center;
+            &::after {
+              content: "";
+              border: 0;
+              background: url(/assets/images/icons/dropdown_arrow.svg);
+              background-repeat: no-repeat;
+              height: 1rem;
+              margin-left: 1rem;
+              width: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .header-logo-wrapper {
+      border: 1px solid $grey-border;
+      border-radius: 4rem;
+      // font-size: 1.5rem;
+      padding: 0.95rem 3rem;
+      color: $dark-black;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include breakpoint("iPad") {
+        width: 100px;
+        margin-top: 2rem;
+        // img {
+        //   visibility: hidden;
+        // }
+      }
+    }
+  }
+}
+
+.dropdown-item {
+  font-size: 1.4rem;
+}

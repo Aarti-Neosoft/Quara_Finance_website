@@ -1,0 +1,89 @@
+.faq-wrapper {
+  padding: 5rem 0.95rem 10rem 0.95rem;
+
+  .heading-style {
+    padding: 5rem 1.5rem 25.5rem 1.5rem;
+    flex-direction: column;
+
+    .heading {
+      max-width: 11.1rem;
+      padding: 0.4rem 1.5rem;
+      border-radius: 0.4rem;
+      background: $light-white;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      max-width: 37.1rem;
+    }
+    p {
+      margin-top: 0.1rem;
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  .FAQ-questions {
+    max-width: 78.5rem;
+    width: 100%;
+    padding: 5rem 1.5rem 0rem 1.5rem;
+
+    .accordion {
+      .accordion {
+        .accordion-item {
+          background-color: $dark-grey;
+        }
+
+        &-button {
+          padding: 3.45rem;
+          font-family: $jakarta-regular;
+          color: $dark-black;
+          font-size: 2.4rem;
+          line-height: 3.8rem;
+
+          &::after {
+            width: 4.6rem;
+            height: 4.6rem;
+            border-radius: 10rem;
+            background-color: $white;
+            background-image: url(/assets/images/icons/accordian_UP_arrow.svg);
+            background-size: 1.8rem 1.8rem;
+            background-position: center;
+            border-radius: 2.3rem;
+            border: 0.1rem solid rgba(6, 6, 6, 0.1);
+          }
+
+          &:not(.collapsed) {
+            border-top-left-radius: 0.6rem;
+            border-top-right-radius: 0.6rem;
+            background-color: $accordian-background;
+            box-shadow: 0 0 0 transparent;
+
+            &::after {
+              background-color: $dark-blue;
+              background-image: url(/assets/images/icons/accordian_down_arrow.svg);
+
+              transform: rotate(0deg);
+            }
+          }
+        }
+
+        &-body {
+          padding: 0;
+          font-family: $jakarta-regular;
+          color: $light-grey;
+          font-size: 2rem;
+        }
+
+        &-collapse {
+          padding: 0 10rem 3.5rem 3.5rem;
+
+          &.show {
+            background-color: $accordian-background;
+            border-bottom-left-radius: 0.6rem;
+            border-bottom-right-radius: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

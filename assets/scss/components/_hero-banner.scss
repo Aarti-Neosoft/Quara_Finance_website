@@ -1,0 +1,101 @@
+.hero-banner {
+  background: $dark-navyblue;
+  position: relative;
+
+  [class*="strike"] {
+    position: absolute;
+
+    > img {
+      height: 100%;
+    }
+  }
+
+  .strike {
+    top: 9.2rem;
+    left: 0;
+  }
+  .strike-two {
+    top: 31.1rem;
+    left: 0;
+  }
+
+  .strike-three {
+    top: 9.2rem;
+    right: 0;
+  }
+
+  .strike-four {
+    top: 31.1rem;
+    right: 0;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 840px;
+
+    > * {
+      text-align: center;
+    }
+
+    > h2 {
+      color: $yellow;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 2rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      margin-top: 13rem;
+
+      @include breakpoint("mobile") {
+        font-size: 1.6rem;
+      }
+    }
+
+    > h1 {
+      color: $white;
+      font-size: 6.8rem;
+      font-weight: 700;
+      line-height: 120%;
+
+      @include breakpoint("ipad") {
+        font-size: 5rem;
+      }
+
+      @include breakpoint("mobile") {
+        font-size: 3.6rem;
+      }
+    }
+
+    > p {
+      color: #fff;
+      font-size: 1.8rem;
+      line-height: 160%;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 22rem;
+
+    @include breakpoint("mobile") {
+      flex-direction: column;
+    }
+  }
+}

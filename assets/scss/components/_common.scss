@@ -1,0 +1,173 @@
+.special_heading {
+  font-size: 1.4rem;
+  font-family: $jakarta-medium;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background: $linear-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 2.2rem;
+
+  @include breakpoint("mobile") {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.main_heading {
+  font-size: 4.4rem;
+  font-family: $jakarta-semibold;
+  line-height: 5.5rem;
+  color: $dark-black;
+  margin: 0;
+
+  @include breakpoint("mobile") {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+}
+
+.para {
+  color: $light-grey;
+  font-family: $jakarta-light;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.5rem;
+
+  @include breakpoint("mobile") {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.blue_heading {
+  color: $blue;
+  text-align: center;
+  font-family: $jakarta-medium;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 2.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 3.5rem;
+}
+
+.accordian_content {
+  color: $dark-grey;
+  font-family: $jakarta-regular;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: 2.8rem;
+}
+
+.accordian_heading {
+  color: $dark-grey;
+  font-family: $jakarta-regular;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: 3.8rem;
+}
+
+.card_icon_wrapper {
+  height: 94px;
+  width: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_sec1 {
+  background-color: $light-blue;
+  img {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+.icon_sec2 {
+  background-color: $light-orange;
+  img {
+    height: 52px;
+    width: 52px;
+  }
+}
+.icon_sec3 {
+  background-color: $light-blue2;
+  img {
+    height: 49px;
+    width: 49px;
+  }
+}
+
+.card_info {
+  h5 {
+    font-size: 2.4rem;
+    color: $dark-black;
+    font-family: $jakarta-medium;
+  }
+
+  p {
+    color: $dark-grey;
+    font-size: 1.8rem;
+    width: 32.3rem;
+    font-family: $jakarta-regular;
+
+    @include breakpoint("mobile") {
+      width: 100%;
+    }
+  }
+}
+
+.section__description {
+  @extend %flexColumn;
+  @extend %flexCenter;
+  gap: 10px;
+  width: 919px;
+
+  > * {
+    text-align: center;
+  }
+
+  > button {
+    padding: 6.5px 32.49px 5.5px 33.68px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    > span {
+      background: linear-gradient(90deg, #121943 -11.32%, #089eff 104.77%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  > h2 {
+    margin-top: 9.5px;
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%; /* 52.8px */
+  }
+
+  > p {
+    color: #d6d8dc;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+  }
+}
+
+.Footer_placeholder {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: $dark-navyblue;
+}

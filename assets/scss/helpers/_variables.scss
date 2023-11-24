@@ -1,0 +1,51 @@
+$yellow: #facc15;
+$white: #fff;
+$light-white: #f3f3f3;
+$black: #000;
+$dark-black: #060606;
+$card-light-blue: #059dff26;
+$card-dark-blue: #0e1c70;
+$dark-blue: #161c2d;
+$blue-shade1: #0f213c;
+$dark-navyblue: #121943;
+$light-navyblue: #1c255c;
+$footer-navyblue: #0e0a24;
+$linear-gradient: linear-gradient(90deg, #121943 -11.32%, #089eff 104.77%);
+$heading-black: #0f213c;
+$muted-grey: #d6d8dc;
+$light-grey: #6e7279;
+$medium-grey: #7c7e82;
+$border-grey: #d9e1e9;
+$dark-grey: #515254;
+$grey-border: rgba(0, 0, 0, 0.2);
+$blue: #0d2ac1;
+$card-bg: rgba(6, 6, 6, 0.03);
+$card-border: #d9d9d9;
+$accordian-background: #eee;
+$light-blue: #059dff26;
+$light-orange: #fb534326;
+$light-blue2: #3a7dec26;
+$card-background: #eef3f8;
+
+// Font Path
+
+// $font-family: "Plus Jakarta Sans";
+
+$jakarta-thin: "Plus-Jakarta-extralight";
+$jakarta-light: "Plus-Jakarta-light";
+$jakarta-regular: "Plus-Jakarta-regular";
+$jakarta-medium: "Plus-Jakarta-medium";
+$jakarta-semibold: "Plus-Jakarta-semibold";
+$jakarta-bold: "Plus-Jakarta-bold";
+
+// Flex Position
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,51 @@
+.btn {
+  padding: 1.6rem 3.5rem;
+  border-radius: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: $white;
+  cursor: pointer;
+  transition: all 300ms ease;
+
+  &-outline {
+    border: 1px solid $white;
+
+    &:focus,
+    &:hover {
+      border: 1px solid $dark-navyblue;
+      background: $white;
+      color: $dark-blue;
+    }
+  }
+
+  &-yellow {
+    border: 1px solid $yellow;
+    background: $yellow;
+    color: $dark-blue;
+
+    &:focus,
+    &:hover {
+      border: 1px solid $yellow;
+      background: $dark-blue;
+      color: $yellow;
+    }
+  }
+
+  &-white {
+    border: 1px solid $white;
+    background: $white;
+    color: $footer-navyblue;
+
+    &:focus,
+    &:hover {
+      border: 1px solid $white;
+      background: $footer-navyblue;
+      color: $white;
+    }
+  }
+
+  &-darkblue {
+    background: $dark-navyblue;
+  }
+}

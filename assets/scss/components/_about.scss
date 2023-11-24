@@ -1,0 +1,120 @@
+.about-section {
+  padding: 5.5rem 3.4rem 10.1rem 3.4rem;
+  position: relative;
+
+  .strike-vector {
+    position: absolute;
+    top: 0rem;
+    left: -6rem;
+    max-width: 98.9rem;
+  }
+
+  .about_wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+
+    .about_image_wrapper {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .logo-10yrs {
+        position: absolute;
+        max-width: 21.4rem;
+        left: 49.9rem;
+        top: 2.8rem;
+      }
+    }
+
+    .about_info {
+      display: flex;
+      justify-content: end;
+
+      @include breakpoint("mobile") {
+        justify-content: center;
+      }
+
+      .about_content {
+        width: 51.1rem;
+
+        @include breakpoint("mobile") {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 2.5rem;
+          padding: 0 2.5rem;
+        }
+
+        .heading {
+          padding: 0.65rem 3.2rem 0.5rem 2.3rem;
+          border: 0;
+          border-radius: 0.4rem;
+          background: $light-white;
+          max-width: 22.7rem;
+          flex-shrink: 0;
+          margin-top: -6.1rem;
+        }
+
+        .main_heading {
+          margin-top: 1.9rem;
+        }
+
+        .para {
+          padding: 1rem 0 2.5rem 0;
+        }
+
+        .about_points_list {
+          padding: 2.5rem 1.4rem;
+          font-family: $jakarta-semibold;
+          border: 1px solid $border-grey;
+
+          @include breakpoint("smallmobile") {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+          }
+
+          .points_listing {
+            .about_points {
+              display: flex;
+              align-items: center;
+              font-size: 1.8rem;
+              padding-top: 0.8rem;
+
+              @include breakpoint("mobile") {
+                min-width: 14.8rem;
+                margin-left: 7rem;
+              }
+
+              @include breakpoint("smallmobile") {
+                margin: 0.8rem 0 0.8rem 4rem;
+              }
+
+              &::before {
+                width: 1.6rem;
+                height: 1.6rem;
+                content: "";
+                background: url(/assets/images/icons/right_tick.svg);
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 0.8rem;
+              }
+            }
+          }
+        }
+
+        .btn {
+          margin-top: 3.3rem;
+          margin-left: -1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.eligibility-section {
+  background-color: $blue-shade1;
+  .eligibility-content {
+    padding: 7.4rem 3.25rem;
+
+    @include breakpoint("iPad") {
+      padding: 6rem 4rem;
+    }
+
+    .eligi_image {
+      margin-top: 20.4rem;
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      @include breakpoint("iPad") {
+        margin-top: 5rem;
+        width: 100%;
+      }
+    }
+
+    .eligi_content {
+      margin-left: 6.5rem;
+      width: 50%;
+
+      @include breakpoint("mobile") {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+
+      .heading {
+        padding: 0.4rem 3rem;
+        border-radius: 0.4rem;
+        background: $light-white;
+        max-width: 14.6rem;
+        margin-bottom: 1rem;
+      }
+
+      .important-text {
+        text-decoration: underline yellow;
+      }
+
+      .eligi_list {
+        margin-top: 4.1rem;
+
+        li {
+          color: $white;
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+          gap: 3rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          img {
+            height: 8rem;
+            width: 8rem;
+          }
+
+          h4 {
+            font-size: 2rem;
+            font-family: $jakarta-semibold;
+            line-height: 3.2rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+            font-family: $jakarta-light;
+            color: $white;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
