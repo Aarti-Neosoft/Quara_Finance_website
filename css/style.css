@@ -620,7 +620,6 @@ svg {
   height: 4.6rem;
   border-radius: 10rem;
   background-color: #fff;
-  background-image: url(/assets/images/icons/accordian_UP_arrow.svg);
   background-size: 1.8rem 1.8rem;
   background-position: center;
   border-radius: 2.3rem;
@@ -634,8 +633,6 @@ svg {
 }
 .faq-wrapper .FAQ-questions .accordion .accordion-button:not(.collapsed)::after {
   background-color: #161c2d;
-  background-image: url(/assets/images/icons/accordian_down_arrow.svg);
-  transform: rotate(0deg);
 }
 .faq-wrapper .FAQ-questions .accordion .accordion-body {
   padding: 0;

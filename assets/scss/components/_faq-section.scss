@@ -61,7 +61,7 @@
             height: 4.6rem;
             border-radius: 10rem;
             background-color: $white;
-            background-image: url(/assets/images/icons/accordian_UP_arrow.svg);
+            // background-image: url(../../images/icons/accordian_UP_arrow.svg);
             background-size: 1.8rem 1.8rem;
             background-position: center;
             border-radius: 2.3rem;
@@ -76,9 +76,8 @@
 
             &::after {
               background-color: $dark-blue;
-              background-image: url(/assets/images/icons/accordian_down_arrow.svg);
-
-              transform: rotate(0deg);
+              // background-image: url(../../images/icons/accordian_down_arrow.svg);
+              // transform: rotate(0deg);
             }
           }
         }
