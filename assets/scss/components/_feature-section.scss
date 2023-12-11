@@ -7,6 +7,13 @@
     flex-direction: column;
     align-items: center;
 
+    @include breakpoint("small") {
+      text-align: center;
+    }
+    @include breakpoint("xtrasmall") {
+      text-align: center;
+    }
+
     .heading {
       padding: 0.4rem 4.1rem;
       border-radius: 0.4rem;
@@ -22,7 +29,7 @@
       text-align: center;
     }
 
-    @include breakpoint("iPad") {
+    @include breakpoint("medium") {
       width: 100%;
     }
   }
@@ -45,6 +52,12 @@
         max-height: 3.5rem;
       }
 
+      @include breakpoint("xtrasmall") {
+        font-size: 1.2rem;
+        line-height: 2.0rem;
+
+      } 
+
       .card-title {
         color: $dark-navyblue;
         font-family: $jakarta-medium;
@@ -52,22 +65,34 @@
         line-height: 2.8rem;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
+
+        
+      @include breakpoint("xtrasmall") {
+        font-size: 1.2rem;
+        line-height: 2.0rem;
+
+      }
       }
       .card-body {
-        // padding-left: 10px;
-        // padding-right: 10px;
 
         p {
           font-size: 1.6rem;
           font-weight: 100;
-          // line-height: 25px;
+          line-height: 2.5rem;
           color: gray;
+
+          @include breakpoint("xtrasmall") {
+            font-size: 1.0rem;
+            line-height: 2.0rem;
+    
+          }
         }
+
       }
     }
   }
 
-  @include breakpoint("iPad") {
+  @include breakpoint("medium") {
     .card-container {
       .card {
         min-width: calc((100% / 2) - 2.2rem);
@@ -75,14 +100,14 @@
     }
   }
 
-  @include breakpoint("mobile") {
+  @include breakpoint("small") {
     .card-container {
       .card {
         min-width: 100%;
       }
     }
   }
-  @include breakpoint("smallmobile") {
+  @include breakpoint("xtrasmall") {
     .card-container {
       .card {
         min-width: 100%;

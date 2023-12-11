@@ -1,12 +1,17 @@
 .about-section {
-  padding: 5.5rem 3.4rem 10.1rem 3.4rem;
+  margin-top: 5.55rem;
+  margin-bottom: 10.1rem;
+  padding: 0 3.4rem;
   position: relative;
 
   .strike-vector {
     position: absolute;
-    top: 0rem;
+    top: -6rem;
     left: -6rem;
-    max-width: 98.9rem;
+    width: 98.9rem;  
+    @include breakpoint("large") {
+      visibility: hidden;
+    }
   }
 
   .about_wrapper {
@@ -26,26 +31,31 @@
         max-width: 21.4rem;
         left: 49.9rem;
         top: 2.8rem;
+        @include breakpoint("large") {
+          visibility: hidden;
+        }
       }
+    
     }
 
     .about_info {
       display: flex;
       justify-content: end;
 
-      @include breakpoint("mobile") {
+      @include breakpoint("small") {
         justify-content: center;
       }
 
       .about_content {
         width: 51.1rem;
 
-        @include breakpoint("mobile") {
+        @include breakpoint("small") {
           width: 100%;
           display: flex;
           justify-content: center;
-          flex-direction: column;
           align-items: center;
+          flex-direction: column;
+        
           text-align: center;
           margin-top: 2.5rem;
           padding: 0 2.5rem;
@@ -58,41 +68,41 @@
           background: $light-white;
           max-width: 22.7rem;
           flex-shrink: 0;
-          margin-top: -6.1rem;
+          margin-top: 4.95rem;
         }
 
         .main_heading {
-          margin-top: 1.9rem;
+          margin-top: 2rem;
         }
 
         .para {
-          padding: 1rem 0 2.5rem 0;
+          margin-top: 1rem;
+          margin-bottom: 2.5rem ;
         }
 
         .about_points_list {
-          padding: 2.5rem 1.4rem;
+          padding: 2.6rem 1.5rem;
           font-family: $jakarta-semibold;
-          border: 1px solid $border-grey;
+          border: 0.1rem solid $border-grey;
 
-          @include breakpoint("smallmobile") {
+          @include breakpoint("small") {
             display: flex;
             justify-content: center;
-            flex-direction: column;
           }
 
           .points_listing {
+      
             .about_points {
               display: flex;
               align-items: center;
               font-size: 1.8rem;
               padding-top: 0.8rem;
 
-              @include breakpoint("mobile") {
+              @include breakpoint("small") {
                 min-width: 14.8rem;
-                margin-left: 7rem;
               }
 
-              @include breakpoint("smallmobile") {
+              @include breakpoint("xtrasmall") {
                 margin: 0.8rem 0 0.8rem 4rem;
               }
 
@@ -112,7 +122,6 @@
 
         .btn {
           margin-top: 3.3rem;
-          margin-left: -1rem;
         }
       }
     }

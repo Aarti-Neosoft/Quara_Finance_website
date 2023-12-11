@@ -1,38 +1,20 @@
 $breakpoints: (
-  "xtrasmallmobile": (
-    max-width: 480px,
+   "xtrasmall": (
+    max-width: 575px,
   ),
-  "smallmobile": (
-    max-width: 580px,
-  ),
-  "mobile": (
+  "small": (
     max-width: 767px,
   ),
-  "iPad": (
-    max-width: 1023px,
-  ),
-  "iPadLandscape": (
-    max-width: 1024px,
-  ),
-  "desktop": (
-    min-width: 1024px,
+  "medium": (
+    max-width: 991px,
   ),
   "large": (
-    min-width: 1200px,
-  ),
-  "smallDesktop": (
-    max-width: 1280px,
-  ),
-  "max-900": (
-    max-width: 900px,
-  ),
-  "medDesktop": (
-    min-width: 1400px,
+    max-width: 1199px,
   ),
   "xtralarge": (
-    min-width: 1632px,
-  ),
-);
+    max-width: 1399px,
+  )
+ );
 
 @mixin breakpoint($name) {
   @if map-has-key($breakpoints, $name) {
@@ -43,3 +25,4 @@ $breakpoints: (
     @warn "Couldn't find a breakpoint named `#{$name}`.";
   }
 }
+

@@ -32,18 +32,16 @@
   &__content {
     position: relative;
     z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flexCenter;
+
   }
 
   &__wrapper {
-    display: flex;
+    @extend %flexCenter;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
-    width: 840px;
+    width: 802px;
+    margin: 0 1.9rem;
 
     > * {
       text-align: center;
@@ -56,45 +54,50 @@
       line-height: 2rem;
       letter-spacing: 0.1rem;
       text-transform: uppercase;
-      margin-top: 13rem;
+      margin-top: 13.1rem;
 
-      @include breakpoint("mobile") {
+      @include breakpoint("small") {
         font-size: 1.6rem;
       }
     }
 
     > h1 {
+      font-family: $jakarta-bold;
       color: $white;
       font-size: 6.8rem;
-      font-weight: 700;
-      line-height: 120%;
 
-      @include breakpoint("ipad") {
-        font-size: 5rem;
+      @include breakpoint("large") {
+        font-size: 5.5rem;
       }
 
-      @include breakpoint("mobile") {
+      @include breakpoint("medium") {
+        font-size: 4.4rem;
+      }
+
+      @include breakpoint("xtrasmall") {
         font-size: 3.6rem;
       }
     }
 
     > p {
       color: #fff;
-      font-size: 1.8rem;
+      font-size: 2rem;
       line-height: 160%;
+      
+      @include breakpoint("small") {
+        font-size: 1.6rem;
+      }
     }
   }
 
   &__btns {
-    display: flex;
-    flex-direction: row;
 
-    align-items: center;
-    justify-content: center;
+    @extend %flexCenter;
+    flex-direction: row; 
     gap: 2rem;
     margin-bottom: 22rem;
 
-    @include breakpoint("mobile") {
+    @include breakpoint("small") {
       flex-direction: column;
     }
   }

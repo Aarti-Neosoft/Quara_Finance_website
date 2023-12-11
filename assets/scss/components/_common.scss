@@ -9,9 +9,9 @@
   -webkit-text-fill-color: transparent;
   line-height: 2.2rem;
 
-  @include breakpoint("mobile") {
+  @include breakpoint("small") {
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -22,9 +22,14 @@
   color: $dark-black;
   margin: 0;
 
-  @include breakpoint("mobile") {
-    font-size: 2.4rem;
-    line-height: 1.5;
+  @include breakpoint("large") {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  @include breakpoint("small") {
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
 }
 
@@ -36,7 +41,7 @@
   font-weight: 300;
   line-height: 2.5rem;
 
-  @include breakpoint("mobile") {
+  @include breakpoint("small") {
     font-size: 1.6rem;
     line-height: 2rem;
   }
@@ -53,6 +58,11 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   margin-top: 3.5rem;
+
+  @include breakpoint("small") {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 }
 
 .accordian_content {
@@ -162,12 +172,21 @@
     font-weight: 300;
     line-height: 160%; /* 25.6px */
   }
+
+  @include breakpoint("small") {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 0 2.5rem;
+  }
 }
 
 .Footer_placeholder {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 100%;
   background: $dark-navyblue;
 }

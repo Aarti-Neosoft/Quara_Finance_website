@@ -1,8 +1,8 @@
 header {
   .header_content {
-    padding: 1.8rem 4.9rem;
+    padding: 1.5rem 4.9rem;
     .navbar-collapse {
-      @include breakpoint("iPad") {
+      @include breakpoint("medium") {
         margin-top: 2.5rem;
       }
     }
@@ -28,6 +28,10 @@ header {
           color: $black;
           text-transform: uppercase;
         }
+
+        .dropdown-menu{
+          width:25rem;
+        }
         .dropdown-item {
           color: $black;
         }
@@ -52,18 +56,14 @@ header {
     .header-logo-wrapper {
       border: 1px solid $grey-border;
       border-radius: 4rem;
-      // font-size: 1.5rem;
       padding: 0.95rem 3rem;
       color: $dark-black;
       display: flex;
       align-items: center;
       gap: 1rem;
-      @include breakpoint("iPad") {
-        width: 100px;
+      @include breakpoint("medium") {
+        width: 135px;
         margin-top: 2rem;
-        // img {
-        //   visibility: hidden;
-        // }
       }
     }
   }

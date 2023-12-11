@@ -1,0 +1,47 @@
+.footer-part1 {
+    background-color: $footer-navyblue;
+  
+    .get-started {
+      padding: 0 3.9rem;
+      position: relative;
+  
+      .get-started-img {
+        position: absolute;
+        top: -12rem;
+  
+        @include breakpoint("large") {
+          top: -16rem;
+          width:80%
+        }
+      
+        @include breakpoint("medium") {
+          top: -11rem;
+          width:45%
+        }
+  
+        @include breakpoint("small") {
+          position: static;
+          top: -6rem;
+          width:100%
+        }
+  
+      }
+  
+      .get-started-content {
+        padding: 6.85rem 1.5rem 9.34rem 1.5rem;
+  
+        @include breakpoint("medium") {
+          padding-block: 1rem;
+        }
+        h2 {
+          color: $white;
+          margin-bottom: 4.6rem;
+
+          @include breakpoint("medium") {
+          font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  

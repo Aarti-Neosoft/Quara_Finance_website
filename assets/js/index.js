@@ -8,10 +8,14 @@ $(".owl-carousel").owlCarousel({
     0: {
       items: 1,
     },
-    580: {
+    575: {
       items: 1,
     },
-    1023: {
+   991: {
+      items: 2,
+    },
+
+    1199: {
       items: 3,
     },
   },

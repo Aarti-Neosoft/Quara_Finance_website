@@ -47,7 +47,7 @@ svg {
 }
 
 .main-container {
-  @include breakpoint("mobile") {
+  @include breakpoint("small") {
     padding: 0rem 2rem;
   }
 }

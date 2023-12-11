@@ -1,5 +1,7 @@
 .why_quara_wrapper {
-  padding: 9rem 1.7rem 1.6rem 1.7rem;
+  margin-top: 9rem ;
+  margin-bottom: 1.6rem;
+  padding:0 1.7rem;
 
   .why_quara_content {
     .heading-style {
@@ -8,6 +10,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include breakpoint("small") {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+        text-align: center;
+        margin-top: 2.5rem;
+        padding: 0 2.5rem;
+      }
 
       .heading {
         padding: 0.4rem 4.1rem;
@@ -24,7 +38,7 @@
         text-align: center;
       }
 
-      @include breakpoint("iPad") {
+      @include breakpoint("large") {
         width: 100%;
       }
     }
@@ -55,3 +69,4 @@
     }
   }
 }
+
